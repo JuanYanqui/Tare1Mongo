@@ -1,0 +1,129 @@
+// use('BddAlumnos');
+
+// db.createCollection("Estudiantes")
+
+// db.Estudiantes.insertOne({
+//     id: 1,
+//     Nombre: "Juan Yanqui",
+//     Dirección: "San Miguel",
+//     Teléfono: "4037424"
+// })
+
+// db.Estudiantes.insertMany([
+// {
+//     id: 2,
+//     Nombre: "Estaban Bacuilima",
+//     Dirección: "Control Sur",
+//     Teléfono: "40384366"
+// },
+// {
+//     id: 3,
+//     Nombre: "Daniela Cadme",
+//     Dirección: "Feria Libre",
+//     Teléfono: "445467577"
+// },
+// {
+//     id: 4,
+//     Nombre: "Jonnathan Gallegos",
+//     Dirección: "Tarqui",
+//     Teléfono: "4435667453"
+// }
+// ])
+
+// db.Estudiantes.insertOne({
+//     id: 4,
+//     Nombre: "Carlos Ibarra",
+//     Dirección: "El coco",
+//     Teléfono: "4034324"
+// })
+
+// db.Estudiantes.find({})
+
+// db.Estudiantes.deleteMany({})
+
+// db.Estudiantes.drop()
+
+// db.dropDatabase()
+
+
+
+//Tarea 2
+
+// use('Articulos');
+
+// db.createCollection("articulos")
+
+// db.articulos.insertMany([
+//  {
+//  _id: 1,
+//  nombre: 'MULTIFUNCION HP DESKJET 2675',
+//  rubro: 'impresora',
+//  precio: 3000,
+//  stock: 20
+//  },
+//  {
+//  _id: 2,
+//  nombre: 'MULTIFUNCION EPSON EXPRESSION XP241',
+//  rubro: 'impresora',
+//  precio: 3700,
+//  stock: 5
+//  },
+//  {
+//  _id: 3,
+//  nombre: 'LED 19 PHILIPS',
+//  rubro: 'monitor',
+//  precio: 4500,
+//  stock: 2
+//  },
+//  {
+//  _id: 4,
+//  nombre: 'LED 22 PHILIPS',
+//  rubro: 'monitor',
+//  precio: 5700,
+//  stock: 4
+//  },
+//  {
+//  _id: 5,
+//  nombre: 'LED 27 PHILIPS',
+//  rubro: 'monitor',
+//  precio: 12000,
+//  stock: 1
+//  },
+//  {
+//  _id: 6,
+//  nombre: 'LOGITECH M90',
+//  rubro: 'mouse',
+//  precio: 300,
+//  stock: 4
+//  }
+
+// ])
+
+// db.articulos.find({})
+
+// db.articulos.find({rubro : {$ne: "impresora"}})
+
+// db.articulos.find({rubro : {$eq: "mouse"}})
+
+// db.articulos.find({precio : {$gt: 5000}})
+
+// db.articulos.find({rubro: "impresora",precio : {$gte: 3500}})
+
+// db.articulos.find({stock : {$gte:0, $lte: 4 }})
+
+// db.articulos.deleteMany({rubro: "impresora"})
+
+// db.articulos.deleteMany({})
+
+
+
+
+// Tarea 3
+
+// db.articulos.find({ $and: [ { rubro: {$eq: "monitor"}}, { stock: {$gt: 2}} ]})
+
+
+// db.articulos.find({ $or: [ { precio: {$eq: 5050}}, { stock: {$lte: 5}} ]})
+
+// db.articulos.find({ rubro: {$not:{$ne: "monitor"}}})
+
